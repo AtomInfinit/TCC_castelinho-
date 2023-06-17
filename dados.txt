@@ -1,0 +1,13 @@
+Título: Pacote de papelão; mas bem sujo,Descrição: Algumas caixas de papelão rasgado,Valor: R$ 50,Contato: antonio@gmail.com,Categoria: Pilha
+Título: qualquer coisa,Descrição: qualquer coisa2 ,Valor: R$ 99999999999,Contato: alguma coisa,Categoria: Papelão
+Título: qualquer coisa,Descrição: qualquer coisa2 ,Valor: R$ 99999999999,Contato: alguma coisa,Categoria: Metal
+Título: qualquer coisa,Descrição: qualquer coisa2 ,Valor: R$ 99999999999,Contato: alguma coisa,Categoria: Alumínio
+Título: qualquer coisa,Descrição: qualquer coisa2 ,Valor: R$ 99999999999,Contato: alguma coisa,Categoria: SucataComum
+Título: qualquer coisa,Descrição: qualquer coisa2 ,Valor: R$ 99999999999,Contato: alguma coisa,Categoria: Vidro
+Título: qualquer coisa,Descrição: qualquer coisa2 ,Valor: R$ 99999999999,Contato: alguma coisa,Categoria: Cobre
+Título: a,Descrição: b,Valor: R$ 6,Contato: da@ga,Categoria: Pilha
+Título: Pacote de papelão, Descrição: Algumas caixas de papelão rasgado, Valor: 50, Contato: antonio@gmail.com, Categoria: Plástico
+Título: qualquer coisa, Descrição: qualquer coisa2 , Valor: 99999999999, Contato: alguma coisa, Categoria: Pilha
+Título: Garrafa,Descrição: Algumas garrafas ,Valor: R$ 12,Contato: info@info.com,Categoria: PlásticoPet
+Título: teste,Descrição: Algumas caixas de papelão rasgado,Valor: R$ 50,Contato: antonio@gmail.com,Categoria: Pilha
+

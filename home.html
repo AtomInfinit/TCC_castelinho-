@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="imagens/logotipo.png">
+  <link rel="stylesheet" href="css/inicio.css" /> <!-- Folha de estilos CSS-->
+  <script src="js/javaScript.js" defer></script> <!-- Script JavaScript -->
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="css/home.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="fade" class="hide"></div>
+  
+  <header>
+    <nav>
+      <a class="logo" href="/home"><img src="image/logotipo.png"></a> <!-- Logotipo -->
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="/home">Home</a></li> <!-- Item do menu: Início -->
+        <li><a href="/sobre">Sobre</a></li> <!-- Item do menu: Sobre -->
+        <li><a href="/produtos">Produtos</a></li> <!-- Item do menu: Produtos -->
+        <li><a href="http://localhost:3000">Anúncios</a></li> <!-- Item do menu: Anúncios -->
+      </ul>
+      
+      <fieldset>
+        <ul class="Login">
+            <img src="image/bonequinho.png" alt="bonequinho" > <!-- Ícone de login -->
+            <!-- Modal -->
+            <div id="myModal" class="modal" class="hide">
+              <!-- Conteúdo do modal -->
+              <div class="conteudo-modal">
+                <form class="login-form">
+                  <h2>Fazer login </h2>
+                  
+                  <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                  </div>
+                  <button type="submit" class="button">Entrar</button>
+                </form>
+              </div>
+            </div>
+          <li id="modalBtn" class="modalBtn">Login</li> <!-- Item do menu: Login -->
+        </ul>
+      </fieldset>
+    </nav>
+  </header>
+  
+  <main>
+
+    <div class="section">
+      <center><h2>Castelinho da sucata - Home</h2></center>
+      <div class="icons">
+        <div class="icon">
+          <a href="/home">
+            <i class="fas fa-home"></i>
+            <div>Home</div>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="/sobre">
+            <i class="fas fa-info-circle"></i>
+            <div>Sobre</div>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="/produtos">
+            <i class="fas fa-shopping-bag"></i>
+            <div>Produtos</div>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="http://localhost:3000">
+            <i class="fas fa-bullhorn"></i>
+            <div>Anúncios</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="grid-item">
+        <img src="imagens/homeHome.jpg" alt="Imagem 1">
+        <div class="text"><h2>Home</h2>Seja bem-vindo! Nesta plataforma, você encontrará as ferramentas necessárias para facilitar o processo de venda do seu material reciclável recolhido. Aqui, você pode conhecer os preços por categoria, anunciar seus produtos e nos conhecer melhor. </div>
+      </div>
+      <div class="grid-item">
+        <div class="text"><h2>Produtos</h2>Onde você encontrará orientações de compra de materiais recicláveis que temos disponíveis, bem como exemplos dos itens que se enquadram em suas respectivas categorias.</div>
+          <img src="imagens/homeProdutos.jpg" alt="Imagem 2">
+      </div>
+      <div class="grid-item">
+        <img src="imagens/homeAnuncios.jpg" alt="Imagem 3">
+        <div class="text"><h2>Anúncios</h2>Aqui, você tem acesso a uma plataforma de compra e venda de materiais recicláveis. Nesta plataforma, é possível comprar, anunciar e visualizar os materiais disponíveis para compra através de anúncios.</div>
+      </div>
+      <div class="grid-item">
+        <div class="text"><h2>Sobre</h2>Em nossa página Sobre, você encontrará informações úteis sobre nosso contato, funcionamento, localização e valores</div>
+          <img src="imagens/sobreHome.jpg" alt="Imagem 4">
+      </div>
+    </div>
+    
+    <div class="grid_dois">
+      <h2></h2><center><h2>Quem somos</h2></center><h2></h2>
+      <div class="circle">
+        <h3>Valores</h3>
+        <div class="text">Valorizamos a sustentabilidade e o cuidado com o meio ambiente. Nossa missão é fomentar a reciclagem e a preservação dos recursos naturais, promovendo práticas que contribuam para a preservação do planeta.
+           Acreditamos que a reciclagem é fundamental para um futuro mais sustentável e equilibrado. Nosso objetivo é proporcionar acesso e oportunidades para todos, incentivando a participação ativa na reciclagem e conscientizando sobre a importância desse processo.
+            Acreditamos que a reciclagem é um meio poderoso para a união com o meio ambiente e compreensão da vida em harmonia com a natureza.</div>
+        <img src="imagens/valores.jpg" alt="Imagem ">
+      </div>
+
+      <div class="circle">
+        <h3>Motivações</h3>
+        <div class="text">A nossa motivação é inspirar e transformar vidas por meio da reciclagem. Buscamos ser reconhecidos como referência no setor, impulsionando práticas inovadoras e sustentáveis. Queremos fazer a diferença, contribuindo para a construção de um mundo melhor,
+           onde cada indivíduo se sinta parte ativa na preservação do meio ambiente. Acreditamos no poder da reciclagem para criar um futuro mais limpo e saudável para as gerações presentes e futuras. Trabalhamos incansavelmente para engajar e educar a comunidade,
+            promovendo a consciência ambiental e incentivando a adoção de hábitos sustentáveis. Juntos, podemos transformar o mundo através da reciclagem.</div>
+        <img src="imagens/bannerMulherMesa.jpg" alt="Imagem ">
+      </div>
+
+      <div class="circle">
+        <h3>Atuação</h3>
+        <div class="text">Nossa atuação se baseia em três pilares principais: coleta, processamento e transformação. Realizamos a coleta de materiais recicláveis em parceria com empresas e comunidades locais, visando aumentar a quantidade de resíduos direcionados à reciclagem.
+           Em seguida, processamos esses materiais em nossas instalações, utilizando tecnologias avançadas e práticas sustentáveis para separar, limpar e preparar os materiais para reciclagem. Por fim, transformamos esses materiais reciclados em novos produtos,
+            contribuindo para a economia circular e reduzindo a dependência de recursos naturais e de fontes não renováveis.</div>
+        <img src="imagens/atuacao.jpg" alt="Imagem ">
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
+
+  </main>
+  <footer>
+	  <div id="footer_content">
+          <div id="footer_contacts">
+            <a class="logoFoot" href="index.html"><img src="image/logotipo.png"></a> <!-- Logotipo -->           
+            
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Páginas</h3>
+              </li>
+              <li>
+                  <a href="/home" class="footer-link">Home</a>
+              </li>
+              <li>
+                  <a href="/sobre" class="footer-link">Sobre</a>
+              </li>
+              <li>
+                  <a href="/produtos" class="footer-link">Produtos</a>
+              </li>
+              <li>
+                  <a href="http://localhost:3000" class="footer-link">Anúncios</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Contato</h3>
+              </li>
+              <li>
+                <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <a href="#" class="footer_numero">(123) 456-7890</a>
+                  </a>
+              </div>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Localização</h3>
+              </li>
+              <li>
+                <a href="#" class="footer-link">R. Adival Bertoli, 126 - Jardim Paraíso I<br> Taquaritinga - SP, 15900-000</a>
+              </li>
+          </ul>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2023 all rights reserved
+      </div>
+	</footer>
+
+</body>
+</html>

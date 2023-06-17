@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos</title>
+  <link rel="icon" href="imagens/logotipo.png">
+  <link rel="stylesheet" href="css/inicio.css" /> <!-- Folha de estilos CSS-->
+  <script src="js/javaScript.js" defer></script> <!-- Script JavaScript -->
+  <script src="index.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="fade" class="hide"></div>
+  
+  <header>
+    <nav>
+      <a class="logo" href="/home"><img src="image/logotipo.png"></a> <!-- Logotipo -->
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="/home">Home</a></li> <!-- Item do menu: Início -->
+        <li><a href="/sobre">Sobre</a></li> <!-- Item do menu: Sobre -->
+        <li><a href="/produtos">Produtos</a></li> <!-- Item do menu: Produtos -->
+        <li><a href="http://localhost:3000">Anúncios</a></li> <!-- Item do menu: Anúncios -->
+      </ul>
+      
+      <fieldset>
+        <ul class="Login">
+            <img src="image/bonequinho.png" alt="bonequinho" > <!-- Ícone de login -->
+            <!-- Modal -->
+            <div id="myModal" class="modal" class="hide">
+              <!-- Conteúdo do modal -->
+              <div class="conteudo-modal">
+                <form class="login-form">
+                  <h2>Fazer login </h2>
+                  
+                  <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                  </div>
+                  <button type="submit" class="button">Entrar</button>
+                </form>
+              </div>
+            </div>
+          <li id="modalBtn" class="modalBtn">Login</li> <!-- Item do menu: Login -->
+        </ul>
+      </fieldset>
+    </nav>
+  </header>
+  
+  <main>
+    <h2 class="h2_cards">Materiais disponíveis para compra</h2>
+
+    <section class="card-container">
+      <div class="card" >
+        <img src="image/pilhas.jpg" alt="pilhas" class="read-more">
+        <div class="card-text">Pilhas</div>
+        <div class="card-content">
+
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Pilhas AA, AAA, CC</li>
+            <li class="card_item_list">Bateria de carro</li>
+            <li class="card_item_list">pilha de relógio</li>
+          </ul>
+          <p>R$ 0,50 por kG</p>
+
+
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="image/sucata.jpg" alt="sucata" class="read-more">
+        <div class="card-text">Sucata</div>
+        <div class="card-content">
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Eletrodomésticos antigos </li>
+            <li class="card_item_list">Ferramentas antigas</li>
+            <li class="card_item_list">Rodas e aros de metal</li>
+          </ul>
+          <p>R$ 10,00 por kG</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="image/papelao.jpg" alt="Papelão" class="read-more">
+        <div class="card-text">Papelão</div>
+        <div class="card-content">
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Caixas de papelão</li>
+            <li class="card_item_list">Capas de caderno</li>
+            <li class="card_item_list">Chapas de preenchimento</li>
+          </ul>
+          <p>R$ 00,80 por kG</p>
+        </div>
+      </div>
+  
+    </section>
+    
+    <h2 class="h2_cards">Recomendados</h2>
+
+    
+    <section class="card-container">
+      <div class="card" >
+        <img src="image/garrafa.jpg" alt="garrafa" class="read-more">
+        <div class="card-text">Plástico</div>
+        <div class="card-content">
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Garrafas</li>
+            <li class="card_item_list">Potes de plástico</li>
+            <li class="card_item_list">Frascos de produtos de limpeza</li>
+          </ul>
+          
+
+          <p>R$ 00,60 por kG</p>
+          
+
+
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="image/aluminio.png" alt="aluminio" class="read-more">
+        <div class="card-text">Alumínio</div>
+        <div class="card-content">
+
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Latas de refrigerante e cerveja</li>
+            <li class="card_item_list">Fios e cabos de alumínio</li>
+            <li class="card_item_list">Panelas de alumínio</li>
+          </ul>
+          <p>R$ 08,00 por kG</p>
+
+
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="image/cobre.png" alt="cobre" class="read-more">
+        <div class="card-text">Cobre</div>
+        <div class="card-content">
+
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Fios de contato</li>
+            <li class="card_item_list">Bobinas e transformadores</li>
+            <li class="card_item_list">Conectores e terminais elétricos</li>
+          </ul>
+          <p>R$ 25,00 por kG</p>
+
+
+        </div>
+      </div>
+  
+    </section>
+    
+    <h2 class="h2_cards">Sugestões</h2>
+
+    <section class="card-container">
+      <div class="card" >
+        <img src="image/garrafas_vidro.jpg" alt="vidro" class="read-more">
+        <div class="card-text">Vidro</div>
+        <div class="card-content">
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Garrafas</li>
+            <li class="card_item_list">Copos e pratos</li>
+            <li class="card_item_list">blindex quebrado</li>
+          </ul>
+          
+
+          <p>R$ 00,50 por kG</p>
+          
+
+
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="image/peças.jpg" alt="peças" class="read-more">
+        <div class="card-text">Peças de metal</div>
+        <div class="card-content">
+
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Parafusos, porcas, arruelas </li>
+            <li class="card_item_list">Carcaças de eletrodomésticos</li>
+            <li class="card_item_list">Latas de tinta</li>
+          </ul>
+          <p>R$ 04,40 por kG</p>
+
+
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="image/metal.png" alt="metal" class="read-more">
+        <div class="card-text">Metal</div>
+        <div class="card-content">
+          <p>Exemplos:</p>
+          <ul>
+            <li class="card_item_list">Chapas industriais</li>
+            <li class="card_item_list">Tubos de metal</li>
+            <li class="card_item_list">Calhas e rufos de metal</li>
+          </ul>
+          <p>R$ 02,60 por kG</p>
+        </div>
+      </div>
+  
+    </section>
+
+  </main>
+  <footer>
+	  <div id="footer_content">
+          <div id="footer_contacts">
+            <a class="logoFoot" href="index.html"><img src="image/logotipo.png"></a> <!-- Logotipo -->           
+            
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Páginas</h3>
+              </li>
+              <li>
+                  <a href="/home" class="footer-link">Home</a>
+              </li>
+              <li>
+                  <a href="/sobre" class="footer-link">Sobre</a>
+              </li>
+              <li>
+                  <a href="/produtos" class="footer-link">Produtos</a>
+              </li>
+              <li>
+                  <a href="http://localhost:3000" class="footer-link">Anúncios</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Contato</h3>
+              </li>
+              <li>
+                <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <a href="#" class="footer_numero">(123) 456-7890</a>
+                  </a>
+              </div>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Localização</h3>
+              </li>
+              <li>
+                <a href="#" class="footer-link">R. Adival Bertoli, 126 - Jardim Paraíso I<br> Taquaritinga - SP, 15900-000</a>
+              </li>
+          </ul>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2023 all rights reserved
+      </div>
+	</footer>
+
+</body>
+</html>

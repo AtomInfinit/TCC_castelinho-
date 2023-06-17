@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre</title>
+  <link rel="icon" href="imagens/logotipo.png">
+  <link rel="stylesheet" href="css/inicio.css" /> <!-- Folha de estilos CSS-->
+  <script src="js/javaScript.js" defer></script> <!-- Script JavaScript -->
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="css/sobre.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+  </style>
+</head>
+
+<body>
+  <div id="fade" class="hide"></div>
+
+  <header>
+    <nav>
+      <a class="logo" href="/home"><img src="image/logotipo.png"></a> <!-- Logotipo -->
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <ul class="nav-list">
+        <li><a href="/home">Home</a></li> <!-- Item do menu: Início -->
+        <li><a href="/sobre">Sobre</a></li> <!-- Item do menu: Sobre -->
+        <li><a href="/produtos">Produtos</a></li> <!-- Item do menu: Produtos -->
+        <li><a href="http://localhost:3000">Anúncios</a></li> <!-- Item do menu: Anúncios -->
+      </ul>
+      
+      <fieldset>
+        <ul class="Login">
+            <img src="image/bonequinho.png" alt="bonequinho" > <!-- Ícone de login -->
+            <!-- Modal -->
+            <div id="myModal" class="modal" class="hide">
+              <!-- Conteúdo do modal -->
+              <div class="conteudo-modal">
+                <form class="login-form">
+                  <h2>Fazer login </h2>
+                  
+                  <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                  </div>
+                  <button type="submit" class="button">Entrar</button>
+                </form>
+              </div>
+            </div>
+          <li id="modalBtn" class="modalBtn">Login</li> <!-- Item do menu: Login -->
+        </ul>
+      </fieldset>
+    </nav>
+  </header>
+  
+  <main>
+        <h2>Sobre nós</h2>
+      <div class="columns">
+          <div class="column">
+            <p>O site em questão tem como principal objetivo facilitar a compra e venda de materiais recicláveis. 
+              Com isso em mente foi criado um ambiente para anunciar produtos e poder visualizar os já criados por outras pessoas.
+
+                Através desse site, os usuários terão a oportunidade de encontrar compradores para seus materiais recicláveis exc
+                edentes, permitindo que eles sejam reintroduzidos no ciclo produtivo, evitando o descarte inadequado e contribuindo para a 
+                redução dos impactos ambientais.
+                
+                Além disso, o site também oferece uma variedade de recursos e informações sobre práticas sustentáveis, dicas de
+                 reciclagem e conscientização ambiental. Os usuários poderão encontrar informações sobre os diferentes tipos de materiais
+                 recicláveis, suas características e formas corretas de reciclagem.</p>
+            <img class="img" src="imagens/sobre_img.jpg" alt="Imagem">
+          </div>
+      </div>
+
+      <h2>Nossos valores</h2>
+        <div class="columns">
+          <div class="column">
+              <img class="img" src="imagens/pessoas.jpg" alt="Imagem">
+              <ul class="ul">
+                  <li class="li">Fornecer uma plataforma online para transações de materiais recicláveis.</li>
+                  <li class="li">Criar oportunidades econômicas para os vendedores de materiais recicláveis.</li>
+                  <li class="li">Ao facilitar a conexão entre compradores e vendedores.</li>
+                  <li class="li">Fornecer oportunidades econômicas e fortalecer a cadeia de valor da reciclagem.</li>
+                </ul>
+          </div>
+        </div>
+
+        <h2>Contato</h2>
+        <div class="columns">
+            <div class="column">
+                <ol  class="ol">
+                  <li class="li"><i class="fa fa-phone"></i>Telefone: (123) 456-7890</li>
+                  <li class="li"><i class="fa fa-envelope"></i>E-mail: exemplo@empresa.com</li>
+                  <li class="li"><i class="fa fa-map-marker"></i>R. Adival Bertoli, 126 - Jardim Paraíso I<br> Taquaritinga - SP, 15900-000</li>
+                  <li class="li"><i class="fa fa-calendar"></i> Atendimento<br> 08h-12h | 13h-19h  </li>
+                  <li class="li"><i class="fa fa-user"></i>Castelinho da sucata</li>
+                            
+                  </ol>
+              <img class="img" src="imagens/contato.jpg" alt="Imagem">
+            </div>
+        </div>
+    
+       
+        <h2>Localização</h2>
+        
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.253872494042!2d-48.51751762453017!3d-21.419264086407892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9397ebf8e91eb%3A0x7fce976dd3aaf0d5!2sR.%20Adival%20Bertoli%2C%20126%20-%20Jardim%20Para%C3%ADso%20I%2C%20Taquaritinga%20-%20SP%2C%2015900-000!5e0!3m2!1spt-BR!2sbr!4v1686783260476!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+  </main>
+  <footer>
+	  <div id="footer_content">
+          <div id="footer_contacts">
+            <a class="logoFoot" href="index.html"><img src="image/logotipo.png"></a> <!-- Logotipo -->           
+            
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Páginas</h3>
+              </li>
+              <li>
+                  <a href="/home" class="footer-link">Home</a>
+              </li>
+              <li>
+                  <a href="/sobre" class="footer-link">Sobre</a>
+              </li>
+              <li>
+                  <a href="/produtos" class="footer-link">Produtos</a>
+              </li>
+              <li>
+                  <a href="http://localhost:3000" class="footer-link">Anúncios</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Contato</h3>
+              </li>
+              <li>
+                <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <a href="#" class="footer_numero">(123) 456-7890</a>
+                  </a>
+              </div>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Localização</h3>
+              </li>
+              <li>
+                <a href="#" class="footer-link">R. Adival Bertoli, 126 - Jardim Paraíso I<br> Taquaritinga - SP, 15900-000</a>
+              </li>
+          </ul>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2023 all rights reserved
+      </div>
+	</footer>
+
+</body>
+</html>
