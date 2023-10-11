@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Passo 1: Ler o conteúdo atual do arquivo de texto
 const conteudoAtual = fs.readFileSync('dados.txt', 'utf8');
+//commit aleatório
 
 // Passo 2: Verificar se o conteúdo atual está vazio
 const novaLinha = '';
