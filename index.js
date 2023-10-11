@@ -53,7 +53,7 @@ app.get('/', (req, res) => {
   const data = fs.readFileSync('dados.txt', 'utf8');
   const cards = data.split('\n').filter(Boolean);
 
-  // Filtrar os cards por categoria (se fornecida)
+  // Filtrar os cards por categoria (se fornecida, caso não este será redirecionado para todos os produtos novamente)
   const categoria = req.query.categoria;
   const filteredCards = categoria ? cards.filter(card => card.includes(`Categoria: ${categoria}`)) : cards;
 
